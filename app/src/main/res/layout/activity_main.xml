@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="100dp"
+        app:cardBackgroundColor="#70777171"
+        app:cardCornerRadius="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:text="Hello there!"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                app:cardElevation="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/defaultimg" />
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="335dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="24dp"
+                android:hint="Enter your name here"
+                android:textColor="@color/white"
+                android:textColorHint="#C1BDBD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="335dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter your Email here"
+                android:textColor="@color/white"
+                android:textColorHint="#C1BDBD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <EditText
+                android:id="@+id/aboutuser"
+                android:layout_width="335dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter about yourself here"
+                android:textColor="@color/white"
+                android:textColorHint="#C1BDBD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <Button
+                android:layout_width="103dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="48dp"
+                android:text="Submit"
+                android:id="@+id/submitbutton"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutuser" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
